@@ -58,6 +58,11 @@
         margin: 0;
       }
 
+      .navbar .navbar-brand span {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
       .navbar .nav-item {
         margin: 0;
         padding: 0;
@@ -73,6 +78,62 @@
 
       .navbar .nav-link:hover {
         color: var(--primary-color) !important;
+      }
+
+      .navbar .container {
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-collapse {
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-nav {
+        margin-left: 30px !important;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: #ffffff !important;
+      }
+
+      .navbar .btn-primary:hover {
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+      }
+
+      /* Override any other navbar background */
+      .navbar-light,
+      .navbar-white {
+        background-color: var(--primary-color) !important;
+      }
+
+      /* Update other theme colors */
+      .btn-primary {
+        background-color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--primary-dark) !important;
+        border-color: var(--primary-dark) !important;
+      }
+
+      .text-primary {
+        color: var(--primary-color) !important;
+      }
+
+      .bg-primary {
+        background-color: var(--primary-color) !important;
       }
 
       .page-footer-section {
@@ -128,7 +189,7 @@
   <body id="top">
     <nav class="navbar navbar-expand-lg navbar-light navbar-floating fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
           <img src="../assets/favicon.png" alt="" width="40" />
           <span class="ml-2">AquaTrack</span>
         </a>
@@ -147,17 +208,17 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ml-lg-5 mt-3 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#features">Features</a>
+              <a class="nav-link" href="../index.html#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#why-choose">Why Us?</a>
+              <a class="nav-link" href="../index.html#why-choose">Why Us?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact</a>
+              <a class="nav-link" href="../index.html#contact">Contact</a>
             </li>
           </ul>
           <div class="ml-auto my-2 my-lg-0 d-flex align-items-center">
-            <li class="nav-item dropdown" style="list-style: none">
+            <div class="nav-item dropdown" style="list-style: none">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -172,7 +233,7 @@
                 <a class="dropdown-item" href="privacy-zh-TW.html">繁體中文</a>
                 <a class="dropdown-item" href="privacy-zh-CN.html">简体中文</a>
               </div>
-            </li>
+            </div>
             <button class="btn btn-primary rounded-pill ml-3">
               Download Now
             </button>
